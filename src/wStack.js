@@ -12,7 +12,7 @@ const weatherstack=(latitude,longitude,callback)=>{
         {   callback('Location Not Found!',undefined)         
         }
         else
-        {   callback(undefined,body.current.weather_descriptions+' it is currently '+body.current.temperature +' degress out. it feels like '+ body.current.feelslike +' degress out.')     
+        {   callback(undefined,body.current.weather_descriptions+' it is currently '+body.current.temperature +' degress out. it feels like '+ body.current.feelslike +' degress out. and its humidity is '+ body.current.humidity + '.')     
         }
     })
 }
